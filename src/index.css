@@ -44,7 +44,7 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0rem 5rem;
+  padding: 0 5rem;
   transition: all 0.2s 0.7s;
   overflow: hidden;
   grid-column: 1 / 2;
@@ -119,22 +119,22 @@ form.sign-in-form {
   justify-content: center;
   align-items: center;
   margin: 0 0.45rem;
-  color: #FF69B4;
+  color: #ff69b4;
   border-radius: 50%;
-  border: 1px solid #FF69B4;
+  border: 1px solid #ff69b4;
   text-decoration: none;
   font-size: 1.1rem;
   transition: 0.3s;
 }
 
 .social-icon:hover {
-  color: #FF69B4;
-  border-color: #FF69B4;
+  color: #ff69b4;
+  border-color: #ff69b4;
 }
 
 .btn {
   width: 150px;
-  background-color: #FF69B4;
+  background-color: #ff69b4;
   border: none;
   outline: none;
   height: 49px;
