@@ -10,10 +10,6 @@ as a software developer with the preferred technologies.
 ### Mobile version view
 ![screenshot](./mobileview.png)
 
-### Dashboard version view
-![screenshot](./dashboad.png)
-
-
 ## Built With
 
 - HTML
