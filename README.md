@@ -20,7 +20,7 @@ as a software developer with the preferred technologies.
 
 ## Live Demo
 
-For the link to the live demo, [Click here]()
+For the link to the live demo, [Click here](https://www.loom.com/share/c012f4c661f64abf858e84d488fd8588)
 
 Prerequisites
 
