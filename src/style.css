@@ -1,0 +1,13 @@
+nav {
+    background-color: rgb(202, 158, 165);
+}
+
+button {
+    padding: 10px;
+}
+
+.balanceSection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
