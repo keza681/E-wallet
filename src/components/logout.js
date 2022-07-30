@@ -10,7 +10,7 @@ logBtn.addEventListener("click", (e)=> {
         .then(res => {
             localStorage.removeItem("email");
             alert("You have logged out. Login to transact again.")
-            location.assign("../index.html")
+            location.assign("../src/index.html")
         })
         .catch(err => {
             alert(err.message)
