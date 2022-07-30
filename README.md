@@ -1,12 +1,14 @@
 # E-wallet
 
->
+> In line with the cashless economy in Rwanda, XYZ company based in Kigali wants to bring an
+e-wallet system to the local citizens. XYZ would like to design and implement this solution
+as a software developer with the preferred technologies.
 
 ### Desktop version view
-![screenshot]()
+![screenshot](./src/assets/desktopview.png)
 
 ### Mobile version view
-![screenshot]()
+![screenshot](./src/assets/mobileview.png)
 
 ## Built With
 
@@ -34,7 +36,7 @@ You only need a browser to run the html file.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/keza681/E-wallet/issues/new).
 
 ## Show your support
 
