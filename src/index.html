@@ -7,7 +7,7 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>SheCanCode E-Wallet Login & Signup</title>
   </head>
   <body>
@@ -15,50 +15,23 @@
       <div class="forms-container">
         <div class="signin-signup">
           <!-----------------LOGIN FORM--------------------->
-          <form action="#" class="sign-in-form">
+          <form class="sign-in-form">
             <h2 class="title">Login</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" id="email" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="number" id="pin" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input
+              type="submit"
+              value="Login"
+              class="btn solid"
+              id="loginBtn"
+            />
             <p class="social-text">Or Login with social medias</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </form>
-          <!-----------------SIGNUP FORM--------------------->
-          <form action="#" class="sign-up-form">
-            <h2 class="title">Signup</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Signup with social medias</p>
             <div class="social-media">
               <a href="#" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
@@ -86,9 +59,18 @@
               online wallet, you can receive and end money within a laps of
               time!!!
             </p>
-            <button class="btn transparent" id="sign-up-btn">Signup</button>
+            <a href="./register.html">
+              <button class="btn transparent" id="sign" formaction="">
+                Signup
+              </button>
+            </a>
           </div>
-          <img src="img/log.svg" class="image" alt="" />
+          <img
+            src="assets/undraw_transfer_money_re_6o1h.svg"
+            class="image"
+            alt=""
+            style="width: 70%"
+          />
         </div>
         <div class="panel right-panel">
           <div class="content">
@@ -105,6 +87,12 @@
         </div>
       </div>
     </div>
-    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="./components/firebase.js"></script>
+    <script src="./components/login.js"></script>
+    <script src="./components/index.js"></script>
   </body>
 </html>
