@@ -151,7 +151,7 @@ form.sign-in-form {
   background-color: #8b3b63;
 }
 
-panels-container {
+.panels-container {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -161,7 +161,7 @@ panels-container {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.container:before {
+.container::before {
   content: '';
   position: absolute;
   height: 2000px;
@@ -227,6 +227,11 @@ panels-container {
   font-size: 0.8rem;
 }
 
+/* .right-panel .image,
+.right-panel .content {
+  transform: translateY(300px);
+} */
+
 .right-panel .image,
 .right-panel .content {
   transform: translateX(800px);
@@ -234,7 +239,7 @@ panels-container {
 
 /* ANIMATION */
 
-.container.sign-up-mode:before {
+.container.sign-up-mode::before {
   transform: translate(100%, -50%);
   right: 52%;
 }
@@ -276,6 +281,7 @@ panels-container {
     min-height: 800px;
     height: 100vh;
   }
+
   .signin-signup {
     width: 100%;
     top: 95%;
@@ -336,7 +342,7 @@ panels-container {
     font-size: 0.7rem;
   }
 
-  .container:before {
+  .container::before {
     width: 1500px;
     height: 1500px;
     transform: translateX(-50%);
@@ -347,7 +353,7 @@ panels-container {
     transition: 2s ease-in-out;
   }
 
-  .container.sign-up-mode:before {
+  .container.sign-up-mode::before {
     transform: translate(-50%, 100%);
     bottom: 32%;
     right: initial;
@@ -360,12 +366,7 @@ panels-container {
 
   .container.sign-up-mode .right-panel .image,
   .container.sign-up-mode .right-panel .content {
-    transform: translateY(0px);
-  }
-
-  .right-panel .image,
-  .right-panel .content {
-    transform: translateY(300px);
+    transform: translateY(0);
   }
 
   .container.sign-up-mode .signin-signup {
@@ -382,19 +383,21 @@ panels-container {
   .image {
     display: none;
   }
+
   .panel .content {
     padding: 0.5rem 1rem;
   }
+
   .container {
     padding: 1.5rem;
   }
 
-  .container:before {
+  .container::before {
     bottom: 72%;
     left: 50%;
   }
 
-  .container.sign-up-mode:before {
+  .container.sign-up-mode::before {
     bottom: 28%;
     left: 50%;
   }
