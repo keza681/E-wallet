@@ -1,75 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div>
-        <nav>
-            <div class="container">
-            
-                <div class="nav-wrapper">
-                    <a class="brand-logo">E-Wallet</a>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a class="waves-effect waves-light btn modal-trigger" href="#sendmodal">Send</a></li>
-                    
-                    <li><button type="submit" class="btn" id="logout">Logout</button></li>
-                  </ul>
-                </div>
-            </div>
-        </nav>   
-        
+      <nav>
         <div class="container">
-            <div class="balanceSection">
-                <h2>Account Email: <span id="email"></span></h2>
-                <h2>Balance: <span id="balance"></span></h2>
-            </div>
+          <div class="nav-wrapper">
+            <a class="brand-logo">E-Wallet</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li>
+                <a
+                  class="waves-effect waves-light btn modal-trigger"
+                  href="#sendmodal"
+                  >Send</a
+                >
+              </li>
+
+              <li>
+                <button type="submit" class="btn" id="logout">Logout</button>
+              </li>
+            </ul>
+          </div>
         </div>
-        +
-        <div class="container">
-            <h4 style="text-align: center; background-color: rgb(202, 158, 165); padding: 10px; color: aliceblue;">Recent transactions</h4>
-            <table class="striped">
-                <thead>
-                  <tr>
-                      <th>Type</th>
-                      <th>Amount</th>
-                      <th>Time</th>
-                  </tr>
-                </thead>
-        
-                <tbody class="table-body">
-                  <!-- // Data will be rendered here -->
-                </tbody>
-              </table>
+      </nav>
+
+      <div class="container">
+        <div class="balanceSection">
+          <h2>Account Email: <span id="email"></span></h2>
+          <h2>Balance: <span id="balance"></span></h2>
         </div>
+      </div>
+      +
+      <div class="container">
+        <h4
+          style="
+            text-align: center;
+            background-color: rgb(202, 158, 165);
+            padding: 10px;
+            color: aliceblue;
+          "
+        >
+          Recent transactions
+        </h4>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+
+          <tbody class="table-body">
+            <!-- // Data will be rendered here -->
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div id="sendmodal" class="modal">
-        <div class="modal-content">
-          <h4>Send money</h4>
-          <form>
-    
-            <label for="rec_email">Recipient's email</label>
-            <input type="text" id="rec_email">
-            <p id="feedback" style="color: green;"></p>
-    
-            <label for="amount">Amount</label>
-            <input type="text" id="amount">
-    
-            <label for="pin">PIN</label>
-            <input type="email" id="pin">
-        </form>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="waves-effect waves-green btn-flat" id="sendBtn">Send</a>
-        </div>
-    </div>
+      <div class="modal-content">
+        <h4>Send money</h4>
+        <form>
+          <label for="rec_email">Recipient's email</label>
+          <input type="text" id="rec_email" />
+          <p id="feedback" style="color: green"></p>
 
+          <label for="amount">Amount</label>
+          <input type="text" id="amount" />
+
+          <label for="pin">PIN</label>
+          <input type="email" id="pin" />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="waves-effect waves-green btn-flat" id="sendBtn"
+          >Send</a
+        >
+      </div>
+    </div>
     <script src="https://momentjs.com/downloads/moment.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="/__/firebase/8.10.1/firebase-app.js"></script>
+    <!-- Firebase products to be used -->
+    <script src="/__/firebase/8.10.1/firebase-auth.js"></script>
+    <script src="/__/firebase/8.10.1/firebase-firestore.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./dashboard.js"></script>
+    <script src="./app.js"></script>
+  </body>
 </html>
