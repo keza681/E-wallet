@@ -5,10 +5,14 @@ e-wallet system to the local citizens. XYZ would like to design and implement th
 as a software developer with the preferred technologies.
 
 ### Desktop version view
-![screenshot](./dashboad.png)
+![screenshot](./desktopview.png)
 
 ### Mobile version view
 ![screenshot](./mobileview.png)
+
+### Dashboard version view
+![screenshot](./dashboad.png)
+
 
 ## Built With
 
